@@ -1,0 +1,75 @@
+object Form2: TForm2
+  Left = 309
+  Top = 251
+  Width = 1040
+  Height = 744
+  HorzScrollBar.Smooth = True
+  HorzScrollBar.Style = ssHotTrack
+  HorzScrollBar.Tracking = True
+  VertScrollBar.Smooth = True
+  VertScrollBar.Style = ssHotTrack
+  VertScrollBar.Tracking = True
+  Anchors = []
+  Caption = #1058#1072#1073#1083#1080#1095#1085#1072#1103' '#1092#1086#1088#1084#1072' '#1075#1088#1072#1092#1072
+  Color = clWhite
+  Constraints.MaxHeight = 1000
+  Constraints.MinHeight = 744
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnCreate = FormCreate
+  OnMouseWheelDown = FormMouseWheelDown
+  OnMouseWheelUp = FormMouseWheelUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object CondProb: TStringGrid
+    Left = 489
+    Top = 0
+    Width = 320
+    Height = 872
+    Cursor = crHandPoint
+    ColCount = 4
+    DefaultColWidth = 80
+    FixedCols = 0
+    RowCount = 34
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs, goAlwaysShowEditor]
+    ParentFont = False
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnMouseWheelDown = CondProbMouseWheelDown
+    OnMouseWheelUp = CondProbMouseWheelUp
+    OnSelectCell = CondProbSelectCell
+  end
+  object ParamGrid: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 489
+    Height = 872
+    Cursor = crHandPoint
+    ColCount = 6
+    DefaultColWidth = 80
+    FixedCols = 0
+    RowCount = 34
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs, goAlwaysShowEditor]
+    ParentFont = False
+    ScrollBars = ssNone
+    TabOrder = 1
+    OnMouseWheelDown = CondProbMouseWheelDown
+    OnMouseWheelUp = CondProbMouseWheelUp
+    OnSelectCell = CondProbSelectCell
+  end
+end
